@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "webpack": "webpack",
-    "prod": "yarn webpack -- --mode production",
-    "dev": "yarn webpack -- --mode development"
+    "prod": "npm run webpack -- --env.mode production",
+    "dev": "npm run webpack -- --env.mode development",
+    "webpack-dev-server": "webpack-dev-server --env.mode development"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,8 @@
   },
   "homepage": "https://github.com/TheLarkInn/webpack-workshop-2018#readme",
   "devDependencies": {
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "webpack-merge": "^4.1.4"
   },
   "dependencies": {
     "babel-loader": "^7.1.5",
